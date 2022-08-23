@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(66, 66, 66);
+}
+.left {
+    height: 100%;
+    width: 25%;
+    background: linear-gradient(rgb(88, 88, 226), rgb(135, 135, 214));
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    position: fixed;
+}
+.photo {
+    width: 90%;
+    border-radius: 40%;
+    margin-top: 20px;
+}
+.left-name {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.left__contacts {
+    margin: 0;
+}
+.left_title {
+    font-size: 35px;
+    margin: 0;
+}
+.left_item {
+    font-size: 25px;
+    margin: 0;
+}
+.works {
+    
+    margin: 40px 0 30px 0;
+}
+
+
+
+.right{
+    background: linear-gradient(#fffec2,#daf4ff	);
+    width: 100%;
+    margin-left: 25%;
+    text-align: center;
+}
+.right__proffession {
+    font-size: 45px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.right__proffession span{
+    border-bottom: 5px solid #fcac45;
+}
+.right__about {
+    font-size: 40px;
+}
+.right__title{
+    font-size: 35px;
+    margin: 30px 10% 15px 5%;
+    text-align: left;
+    border:solid 2px #fcd29c;
+    padding-left: 3%;
+}
+.right__subtitle {
+    font-size: 20px;
+    text-align: left;
+    margin:0 10% 0 5%;
+    padding-left: 3%;    
+}
+li, ul{
+    font-size: 20px;
+    text-align: left;
+    margin:5px 10% 5px 5%;
+    padding-left: 3%; 
+}
+.right__knowledge_img {
+    margin:0 10% 0 5%
+}
+.knowledge_img{
+    width: 90px;
+    height: 100px;
+    margin: 2% 4% 2% 4%;
+}
+.right__plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 5% 15px 5%;
+}
+.right__plans ul{
+    margin: 0 0 10px 0;
+    padding-left: 3%;
+}
+.plans_left{
+    width: 50%;
+}
+.right__title_row{
+    font-size: 35px;
+    margin: 30px 10% 15px 0;
+    text-align: left;
+    border:solid 2px #fcd29c;
+    padding-left: 3%;
+}
+.plans_right{
+    width: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 1111px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        position: relative;
+    }
+    .right{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .right__title{
+        text-align: center;
+    }
+    .right__plans {
+        display: inline;    
+    }
+    .right__plans ul{
+        margin: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    .plans_left{
+        width: 100%;
+    }
+    .plans_right{
+        width: 100%;
+    }
+    .right__title_row{
+        font-size: 35px;
+        margin: 30px 10% 15px 5%;
+        text-align: center;
+        border:solid 2px #fcd29c;
+        padding-left: 3%;
+    }
+
+    
+}
