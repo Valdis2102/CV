@@ -7,9 +7,10 @@ body{
 .left {
     height: 100%;
     width: 25%;
-    background: linear-gradient(rgb(88, 88, 226), rgb(135, 135, 214),rgb(211, 211, 218));
+    background: linear-gradient(#4d7c81,#9d9ea3,#036970);
     text-align: center;
     font-family: 'Kanit', sans-serif;
+    text-shadow: 1px 2px 15px rgb(219, 217, 217);
     position: fixed;
 }
 .description{
@@ -48,6 +49,7 @@ body{
     width: 100%;
     margin-left: 25%;
     text-align: center;
+    font-family: 'Kanit', sans-serif;
 }
 .right__proffession {
     font-size: 45px;
@@ -130,6 +132,7 @@ li, ul{
     .left{
         width: 100%;
         position: relative;
+        background: linear-gradient(#436b6a,#67a5b6,rgb(211, 211, 218));
     }
     .right{
         width: 100%;
