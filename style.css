@@ -7,15 +7,17 @@ body{
 .left {
     height: 100%;
     width: 25%;
-    background: linear-gradient(rgb(88, 88, 226), rgb(135, 135, 214));
+    background: linear-gradient(rgb(88, 88, 226), rgb(135, 135, 214),rgb(211, 211, 218));
     text-align: center;
     font-family: 'Kanit', sans-serif;
     position: fixed;
 }
-.photo {
-    width: 90%;
-    border-radius: 40%;
-    margin-top: 20px;
+.description{
+    position: relative;
+    top: -70px;
+}
+.photo{
+    width: 100%;   
 }
 .left-name {
     font-size: 45px;
@@ -42,7 +44,7 @@ body{
 
 
 .right{
-    background: linear-gradient(#fffec2,#daf4ff	);
+    background: linear-gradient(rgb(211, 211, 218),#7bc3d6,#6aaaa9	);
     width: 100%;
     margin-left: 25%;
     text-align: center;
@@ -61,10 +63,14 @@ body{
 .right__title{
     font-size: 35px;
     margin: 30px 10% 15px 5%;
+    padding-top: 10px;
     text-align: left;
-    border:solid 2px #fcd29c;
     padding-left: 3%;
 }
+.right h1{
+    border-top: 2px solid rgb(145, 139, 139);
+}
+
 .right__subtitle {
     font-size: 20px;
     text-align: left;
