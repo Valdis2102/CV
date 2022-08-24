@@ -165,3 +165,8 @@ li, ul{
 
     
 }
+@media screen and (max-height: 840px) {
+    .left{
+        position: absolute;
+    }
+}
