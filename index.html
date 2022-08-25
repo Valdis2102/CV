@@ -97,7 +97,7 @@
                         
             if (innerHeight<=821 & innerWidth>=1111) {
                      
-                ldv.className += ' adptive_left'
+                ldv.classList.add('adptive_left');
             
                 console.log(innerHeight + ' ___ ' +left_height+ ' ___ ' +right_height);
                 console.log('scrollHeiht:  '+ 'left ' +ldv.scrollHeight+ '       '+ 'rigth '+ rdv.scrollHeight);
@@ -113,9 +113,12 @@
                 console.log('offSetHeiht:  '+ 'left ' +ldv.offsetHeight+ '       '+ 'rigth '+ rdv.offsetHeight);
                 console.log('clientHeiht:  '+ 'left ' +ldv.clientHeight+ '       '+ 'rigth '+ rdv.clientHeight);
         
+            }else{
+                ldv.classList.remove('adptive_left');
             }
         };
-    
+
+           
         window.onresize = fun;
         window.onload = fun;
 
