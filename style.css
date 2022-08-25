@@ -118,6 +118,13 @@ li, ul{
 }
 
 
+.adptive_left {
+    position: absolute;    
+}
+
+
+
+
 
 
 
@@ -161,12 +168,5 @@ li, ul{
         text-align: center;
         border:solid 2px #fcd29c;
         padding-left: 3%;
-    }
-
-    
-}
-@media screen and (max-height: 840px) {
-    .left{
-        position: absolute;
-    }
+    }    
 }

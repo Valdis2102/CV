@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="left" id="mm1">
+    <div class="left" id="left_div">
         <div class="left_Logo">
                 <img src="img/2.png" alt="" class="photo">
         </div>
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="right" id="mm2">
+    <div class="right" id="right_div">
         <div class="right__proffession">I WANT TO BECOME A <span>WEB DEVELOPER</span></div>
         <div class="right__about">
             <h1 class="right__title">Some words about me</h1>
@@ -86,12 +86,38 @@
     
 </body>
 <script>
-    window.onresize=function(){
-        if(document.getElementById("mm2").clientHeight<document.getElementById("mm1").clientHeight){
-            document.getElementById("mm2").style.height=document.getElementById("mm1").offsetHeight+"px";
-        }else{
-            document.getElementById("mm1").style.height=document.getElementById("mm2").offsetHeight+"px";
-        }
-    }
+    
+    var ldv = document.getElementById('left_div');
+    var rdv = document.getElementById('right_div');
+    var left_height = ldv.scrollHeight;
+    var right_height = rdv.scrollHeight;
+
+             
+        var fun = function change_height () {
+                        
+            if (innerHeight<=821 & innerWidth>=1111) {
+                     
+                ldv.className += ' adptive_left'
+            
+                console.log(innerHeight + ' ___ ' +left_height+ ' ___ ' +right_height);
+                console.log('scrollHeiht:  '+ 'left ' +ldv.scrollHeight+ '       '+ 'rigth '+ rdv.scrollHeight);
+                console.log('offSetHeiht:  '+ 'left ' +ldv.offsetHeight+ '       '+ 'rigth '+ rdv.offsetHeight);
+                console.log('clientHeiht:  '+ 'left ' +ldv.clientHeight+ '       '+ 'rigth '+ rdv.clientHeight);
+                
+                
+                ldv.style.height = rdv.clientHeight+'px';     
+                
+                console.log('После изменений');
+                console.log(innerHeight + ' ___ ' +left_height+ ' ___ ' +right_height);
+                console.log('scrollHeiht:  '+ 'left ' +ldv.scrollHeight+ '       '+ 'rigth '+ rdv.scrollHeight);
+                console.log('offSetHeiht:  '+ 'left ' +ldv.offsetHeight+ '       '+ 'rigth '+ rdv.offsetHeight);
+                console.log('clientHeiht:  '+ 'left ' +ldv.clientHeight+ '       '+ 'rigth '+ rdv.clientHeight);
+        
+            }
+        };
+    
+        window.onresize = fun;
+        window.onload = fun;
+
 </script>
 </html>
