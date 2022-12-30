@@ -1,6 +1,9 @@
 body{
     background-color: #1d2939;
 }
+a{
+    color:white;
+}
 .wrapper{
     max-width: 1200px;
     margin-top: 1%;
@@ -34,6 +37,9 @@ span.name{
 .left{
     background-color: white;
     min-width: 280px;
+}
+.block{
+    margin-top: 5px;
 }
 .title-ico{
     max-width: 70px;
@@ -101,6 +107,9 @@ li{
 }
 
 @media print{
+    a{
+        color: black;
+    }
     .container{
         border-bottom: solid #4e3c37 3px;
     }
@@ -117,5 +126,8 @@ li{
     }
     .right{
         color: black;
+    }
+    .lang{
+        margin-top: 10%;
     }
 }
